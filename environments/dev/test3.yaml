@@ -1,0 +1,22 @@
+apiVersion: storage.example.com/v1alpha1
+kind: S3Bucket
+metadata:
+  name: test-bucket-crossplane-2
+  namespace: default
+  labels:
+    app.kubernetes.io/name: test-bucket-crossplane
+    environment: test
+  annotations:
+    description: "Test S3 bucket for Crossplane"
+spec:
+  bucketName: test-crossplane-buc
+  region: ap-southeast-1
+  versioning: true
+  encryption: true
+  publicAccess: true
+  tags:
+    Environment: test
+    ManagedBy: crossplane
+    Purpose: testing
+  compositionRef:
+    name: s3bucket-composition
