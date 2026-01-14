@@ -18,7 +18,7 @@ metadata:
 spec:
   # Crossplane v2 - flat spec structure (no nested parameters)
   bucketName: test-fi
-  region: us-east-1
+  region: ap-southeast-1
   versioning: false
   encryption: false
   publicAccess: false
