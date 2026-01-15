@@ -13,7 +13,7 @@ metadata:
     description: ""
 spec:
   # User-facing parameters (same as XRD spec)
-  bucketName: hia
+  bucketName: hiaa
   region: us-east-1
   versioning: false
   encryption: false
