@@ -4,7 +4,7 @@ apiVersion: storage.example.com/v1alpha1
 kind: AppS3Bucket
 metadata:
   name: my-s3bucket
-  namespace: team-a
+  namespace: default
   labels:
     app.kubernetes.io/part-of: platform
     app.kubernetes.io/managed-by: crossplane
